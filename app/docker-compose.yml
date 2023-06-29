@@ -1,0 +1,9 @@
+---
+version: '3.0'
+services:
+  app:
+    image: app:latest
+    container_name: app
+    restart: always
+    ports:
+      - '8000:8000'
