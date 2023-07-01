@@ -1,9 +1,10 @@
 FROM ubuntu:latest
 
 RUN mkdir /app && apt-get update && apt-get install -y \
-	python3 \
-	python3-pip \
-	&& rm -rf /var/lib/apt/lists/*	
+        libmariadb-dev \
+        python3 \
+        python3-pip \
+        && rm -rf /var/lib/apt/lists/*	
 
 WORKDIR /app
 

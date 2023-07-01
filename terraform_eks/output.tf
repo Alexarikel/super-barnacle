@@ -1,5 +1,6 @@
 data "aws_eks_cluster" "myapp-cluster" {
   name = module.eks.cluster_name
+  depends_on = [module.eks]
 }
 
 output "db_instance_addr" {
