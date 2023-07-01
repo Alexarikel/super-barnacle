@@ -2,10 +2,6 @@ provider "aws" {
   region = var.region
 }
 
-#variable region {}
-#variable private_subnets {}
-#variable public_subnets {}
-
 data "aws_availability_zones" "azs" {}
 
 module "vpc" {

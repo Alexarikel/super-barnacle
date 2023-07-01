@@ -10,12 +10,14 @@ variable "public_subnets_cidr" {
   default = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 }
 
-#azs {
-#  description = "Avaliability zones"
-#  type = list
-#  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
-#}
-
 variable "region" {
   default = "us-east-1"
 }
+
+variable "db_name" {
+  default = "database1"
+}
+
+variable "db_user" {}
+
+variable "db_password" {}
